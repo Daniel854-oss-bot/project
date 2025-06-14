@@ -1,0 +1,121 @@
+/* Базовые стили для Цветочной Гавани */
+
+/* Переменные CSS */
+:root {
+    --color-primary: #4CAF50;      /* Зеленый для кнопок */
+    --color-accent: #F8E7E9;       /* Мягкий розовый */
+    --color-text: #333333;         /* Основной текст */
+    --color-white: #FFFFFF;
+    --font-primary: 'Arial', sans-serif;
+}
+
+/* Сброс стилей */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+/* Шапка */
+.header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/* Основной контент */
+.hero {
+    background-color: var(--color-accent);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Формы */
+.quick-order {
+    padding: 4rem 0;
+}
+
+.quick-order form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.quick-order label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.quick-order input,
+.quick-order select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Подвал */
+.footer {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}

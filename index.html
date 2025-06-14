@@ -1,1 +1,101 @@
-Привет, мир!
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Цветочная Гавань - доставка свежих цветов и букетов в Москве">
+    <title>Цветочная Гавань - Доставка цветов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- Логотип -->
+                <div class="header__logo">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.svg" alt="Цветочная Гавань" width="120" height="40">
+                    </a>
+                </div>
+
+                <!-- Главная навигация -->
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#catalog" class="nav-list__link">Каталог</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#order" class="nav-list__link">Заказ букета</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Контактная информация -->
+                <div class="header__actions">
+                    <a href="tel:+74951234567" class="header__phone">+7 (495) 123-45-67</a>
+                    <button type="button" class="btn btn--secondary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <!-- Главный баннер -->
+        <section class="hero">
+            <div class="container">
+                <h1>Свежие цветы с доставкой по Москве</h1>
+                <p>Букеты от лучших флористов для ваших особенных моментов</p>
+                <button type="button" class="btn btn--primary">Заказать со скидкой 20%</button>
+            </div>
+        </section>
+
+        <!-- Быстрый заказ -->
+        <section id="order" class="quick-order">
+            <div class="container">
+                <h2>Быстрый заказ</h2>
+                <form action="/" method="post">
+                    <label for="bouquet-select">Выберите букет</label>
+                    <select id="bouquet-select" name="bouquet" required>
+                        <option value="">Выберите букет</option>
+                        <option value="roses">Розы - 2500 ₽</option>
+                        <option value="tulips">Тюльпаны - 1800 ₽</option>
+                    </select>
+                    
+                    <label for="customer-name">Ваше имя</label>
+                    <input type="text" id="customer-name" name="name" required>
+                    
+                    <label for="customer-phone">Телефон</label>
+                    <input type="tel" id="customer-phone" name="phone" required>
+                    
+                    <button type="submit" class="btn btn--primary">Заказать</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <address>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Цветочная, д. 15</p>
+                    <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@flower-harbor.ru">info@flower-harbor.ru</a></p>
+                    <p><strong>Режим работы:</strong> Ежедневно с 9:00 до 21:00</p>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Цветочная Гавань. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
